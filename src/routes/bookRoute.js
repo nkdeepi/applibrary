@@ -29,7 +29,7 @@ router.get("/addingbooks",(req,res)=>{
 
 router.get("/:id", (req, res) => {
   const id = req.params.id;
-  console.log("id", id);
+  console.log("id",id)
   bookdata.findById(id).then((Books) => {
     // console.log("Single Book",Books)
 
