@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Storystrap Template</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="/css/styles.css" rel="stylesheet">
+	</head>
+  <style>
+    body {
+      background-image: url('https://i.pinimg.com/originals/8c/74/bb/8c74bb4e959d7211e27c10b5980cb970.jpg');
+    }
+    </style>
+  
+<body style="background-color:lightblue ; ">
+  
+ 
+
+
+<div >
+  <div>
+    <h3 style="text-align:center ;">Login</h3>
+  </div>
+
+
+
+    <form action="/loginuser" method="post"  style="height: 400px;width: 400px ; margin-left: 500px;margin-top: 100px; "  >
+       
+      <!-- <div class="form-group">
+        <label for="exampleInputPassword1">UserName:</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="UserName" name="userName">
+      </div> -->
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address:</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="emailAddress">
+      </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" name="password">
+          </div><br>
+       
+        <button type="submit" class="btn btn-primary" style="margin-left:150px ;">Login</button>
+      </form>
+      </div>
+      <div>
+        <% if(message == "B"){  %>
+          <span style="color:aliceblue  ; font-size:20px;">No Such User</span> 
+          <% } 
+           else if(message == "C") { %>
+            <span style="color:aliceblue ; text-align: center ; font-size:20px ;">Invalid Password</span>
+            <% } %>
+      </div>
+    
+</body>
+</html>
