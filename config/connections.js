@@ -4,7 +4,8 @@
 
 
 const mongoose=require('mongoose')
-const url="mongodb://localhost:27017/LibraryApp"
+const url = process.env.MONGODBURL
+// const url="mongodb://localhost:27017/LibraryApp"
 mongoose.connect(url)
 
 const schema=mongoose.Schema
