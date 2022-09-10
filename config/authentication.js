@@ -1,7 +1,8 @@
 const session = require('express-session')
 const mongodbsession = require('connect-mongodb-session')(session)
 const store = new mongodbsession({
-    uri:"mongodb://localhost:27017/LibraryApp",
+     uri: process.env.MONGODBURL,
+    // uri:"mongodb://localhost:27017/LibraryApp",
     collection:"mycollection"
 
 
